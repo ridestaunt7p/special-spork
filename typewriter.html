@@ -1,0 +1,12 @@
+<h1 id="text"></h1>
+<script>
+const msg = "Hello, GitHub!";
+let i = 0;
+function type() {
+  if (i < msg.length) {
+    document.getElementById("text").textContent += msg[i++];
+    setTimeout(type, 100);
+  }
+}
+type();
+</script>
